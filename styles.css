@@ -518,6 +518,32 @@ dd {
 #caso-buffet {
   --project-preview: url("assets/preview-buffet.webp");
 }
+#caso-customer-api {
+  --project-preview: url("assets/customer-api-swagger.png");
+}
+.api-evidence {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: grid;
+  gap: 16px;
+}
+.api-evidence li {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+.api-evidence strong,
+.api-evidence span {
+  display: block;
+}
+.api-evidence strong {
+  color: var(--accent);
+}
+.api-evidence span {
+  color: #d7dfeb;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
 .featured-project .project-visual {
   background: rgba(28, 35, 45, 0.55);
 }
