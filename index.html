@@ -106,11 +106,11 @@
               <span class="skill-number">03</span>
               <h3>APIs e integrações</h3>
               <p>
-                Avançar na comunicação entre sistemas e na automação de tarefas
-                repetitivas, com novos projetos de estudo.
+                Organizar cadastros com uma API REST, validação de entrada,
+                persistência e controle de acesso.
               </p>
-              <a class="text-link" href="#em-construcao"
-                >Acompanhar os próximos estudos ↓</a
+              <a class="text-link" href="#caso-customer-api"
+                >Conhecer a API de clientes ↓</a
               >
             </article>
           </div>
@@ -126,6 +126,53 @@
             contexto.
           </p>
         </div>
+        <article class="case-project" id="caso-customer-api" aria-labelledby="customer-api-title">
+          <div class="case-heading">
+            <div>
+              <p class="project-meta">ESTUDO DE BACK-END</p>
+              <h3 id="customer-api-title">Customer Management API</h3>
+              <p class="project-subtitle">Cadastro de clientes com regras claras, dados persistidos e acesso controlado.</p>
+            </div>
+            <span class="status neutral">Projeto de estudo</span>
+          </div>
+          <div class="case-layout">
+            <div>
+              <figure class="case-image">
+                <img src="assets/customer-api-swagger.png"
+                  alt="Documentação Swagger com rotas para listar, cadastrar, consultar, atualizar e excluir clientes"
+                  width="1325" height="757" loading="lazy" decoding="async" />
+                <figcaption>Captura da documentação na versão inicial. O contrato atualizado está no repositório.</figcaption>
+              </figure>
+              <ul class="api-evidence" aria-label="Resultados da validação automatizada">
+                <li><strong>111 testes</strong><span>Unitários e integração com MySQL isolado.</span></li>
+                <li><strong>99,01% de cobertura</strong><span>Do módulo da API na validação desta versão.</span></li>
+              </ul>
+            </div>
+            <div class="case-copy">
+              <dl>
+                <dt>Desafio</dt>
+                <dd>Estudar como um cadastro pode manter informações consistentes e responder com clareza quando os dados são inválidos, o cliente não existe ou o banco falha.</dd>
+                <dt>Solução</dt>
+                <dd>Uma API REST em Python/FastAPI com MySQL, consultas parametrizadas, validação dos dados e chave de API nas rotas de clientes.</dd>
+                <dt>Funcionalidades</dt>
+                <dd>Cadastro, consulta, atualização e exclusão; listagem paginada; normalização de nome e e-mail; tratamento de falhas do banco e documentação Swagger.</dd>
+              </dl>
+              <details class="project-flow">
+                <summary>Ver decisões técnicas e limites</summary>
+                <p>A listagem usa limit e offset, com até 100 clientes por consulta e ordenação por ID. A chave X-API-Key fica no ambiente do servidor e autoriza o CRUD completo, sem permissões individuais.</p>
+                <p>O GitHub Actions executa análise de código e testes com MySQL temporário. O projeto é um estudo em Python, complementar à minha formação em C# e .NET; não possui demonstração pública da API nem dados de clientes reais.</p>
+                <p>Login por usuário, auditoria e política de duplicidade de e-mail são evoluções futuras. Cobertura de testes não representa uma garantia de ausência de falhas.</p>
+              </details>
+              <ul class="tags" aria-label="Tecnologias da API de clientes">
+                <li>Python</li><li>FastAPI</li><li>MySQL</li><li>Pytest</li><li>GitHub Actions</li>
+              </ul>
+              <div class="project-links">
+                <a class="button secondary" href="https://github.com/morettichaves/customer-management-api" target="_blank" rel="noopener noreferrer">Ver código da API ↗</a>
+                <a class="text-link" href="https://github.com/morettichaves/customer-management-api#readme" target="_blank" rel="noopener noreferrer">Documentação e execução ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
         <article
           class="featured-project"
           id="caso-jsilva-projeto"
@@ -486,7 +533,7 @@
         >
           <div>
             <p class="section-label">EM CONSTRUÇÃO</p>
-            <h3 id="construction-title">O próximo passo é o back-end.</h3>
+            <h3 id="construction-title">Novos processos, próximos estudos.</h3>
             <p>
               Novos estudos para aprofundar sistemas, APIs e integração de
               dados. Cada projeto entrará aqui conforme for concluído.

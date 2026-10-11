@@ -12,6 +12,7 @@ O conceito que orienta a apresentação é **“Do problema real ao sistema que 
 
 | Projeto | Problema e entrega | Contexto |
 | --- | --- | --- |
+| [Customer Management API](https://github.com/morettichaves/customer-management-api) | CRUD de clientes, MySQL, pagina??o, valida??o e autentica??o por chave de API. | Estudo em Python/FastAPI; 111 testes unit?rios e de integra??o aprovados, com 99,01% de cobertura do m?dulo da API nesta vers?o. |
 | [JSilva Sonhos](https://jsilvasonhos.com.br/) | Catálogo de decoração com filtros, seleção de itens, carrinho de orçamento e continuidade pelo WhatsApp. Disponibilidade e reserva são confirmadas no atendimento. | Site publicado; desenvolvimento da identidade visual, HTML, CSS e JavaScript. |
 | [Barbearia Prime Club](https://barbearia-prime-club.morettichaves.workers.dev/) | Escolha de serviços, profissionais e horários; fluxo de agendamento com proteção contra horários duplicados. | Demonstração com React, TypeScript, API HTTP, Cloudflare D1 e Drizzle ORM. |
 | [Portal Geek](https://morettichaves.github.io/portal-geek/) | Identidade visual e experiência interativa para catálogo, comunidade, eventos e acesso aos canais do projeto. | Projeto acadêmico em HTML, CSS e JavaScript, com Visual Design, IA aplicada e apresentação no Canva. |
